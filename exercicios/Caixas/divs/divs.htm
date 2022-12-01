@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>divs semanticas</title>
+</head>
+<style>
+    article{
+        background-color: rgb(201, 198, 198);
+        padding: 5px; 
+    }
+    
+    nav{
+        background-color: rgb(110, 110, 110);
+        box-shadow: 1px 1px 1px black;
+    }
+    body{
+        background-color: dimgray;
+        font-family: 'Times New Roman', Times, serif; 
+        margin: 0px;
+    }
+    header{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    main{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    h1{
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    nav > a{
+        margin-left: 15px;
+        text-decoration: none;
+        color: white;
+    }
+    nav > a:hover{
+        text-decoration: underline;
+    }
+  footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2px;
+  }
+  footer > p{
+    margin: 0px;
+  }
+  aside{
+    background-color: rgb(163, 162, 162);
+  }
+</style>
+<body>
+    <header>
+    <h1>Meu site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sequi aut perferendis fuga vitae assumenda delectus aliquam, esse consequuntur odio distinctio, porro, exercitationem natus! Quas tempore ex cumque officiis aliquam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatem magni architecto sequi provident fugiat doloribus autem necessitatibus error iusto, fuga aliquam odit rerum nam, corrupti ex harum soluta quam.</p>
+                <aside>Artigo escrito por Gustavo Pereira</aside>
+            </article>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Site feito por Elton</p>
+    </footer>
+</body>
+</html>
