@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+<style>
+    .esta{
+        margin-top: 5px;
+    }
+</style>
 <body>
     <h1>Exemplo de Formulário</h1>
     <form action="cadastro.js" method="get" autocomplete="on"></form>
@@ -17,6 +22,19 @@
     </fieldset>
     <p>
         <input type="submit" value="Enviar">
+    </p>
+    <label for="ava">Avaliação</label><input type="range" name="ava" id="ava"> 
+    <p>
+        <label for="estados">Estados</label><br>
+        <select name="estados" id="estados" class="esta">
+            <option value="BA">Bahia</option>
+            <optgroup label="Região Sudeste">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+                <option value="ES">Espírito Santo</option>
+            </optgroup>
+            <option value="RO">Roraima</option>
+        </select>
     </p>
 </body>
 </html>
