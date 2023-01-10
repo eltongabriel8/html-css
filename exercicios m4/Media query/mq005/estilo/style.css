@@ -1,39 +1,64 @@
 @charset "UTF-8";
 *{
-    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    padding: 0px;
 }
-body{
-    background: black url(../imagens/back-phone.jpg) center center/ cover no-repeat fixed ;
+body, html{
+    background-color: lightgray;
 }
 header{
-    padding: 30px;
+    background-color: rgb(134, 134, 134);
 }
 header > h1{
-    padding: 10px 0px 40px;
-    font-size: 3em;
+    padding: 10px;
     text-align: center;
+}
+menu{
+    display: none;
+}
+menu > ul{
+    list-style: none;
+}
+menu > ul > li > a{
     display: block;
-
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(85, 84, 84);
+    color: white;
+    border-top: 2px solid rgb(134, 134, 134);
+    
+}
+menu > ul > li > a:hover{
+    background-color: gray;
+}
+#burg{
+    background-color: rgb(68, 67, 67);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+#burg:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
 }
 main{
-    width: 800px;
+    width: 90vw;
+    background-color: white;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.705);
-    padding: 20px;
-    border-radius: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
 }
-li{
-    display: inline;
+main > article > h2{
+    padding-bottom: 20px;
 }
- li > a{
-    text-decoration: none;
-    color: white;
-    background: black ;
-    padding: 10px 25px;
-    border-radius: 4px;
-}
-p{
-   padding: 20px 0px 20px;
-   line-height: 1.7em;
+main > article > p{
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    line-height: 1.5em;
 }
