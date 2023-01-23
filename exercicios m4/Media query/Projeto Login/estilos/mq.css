@@ -1,0 +1,38 @@
+@charset "UTF-8";
+@media only screen and (min-width: 768px){
+    body{
+        background-image: linear-gradient(to top, var(--cor1), var(--cor2));
+    }
+    section{
+        width: 80vw;
+    }
+    #imagem{
+        float:left;
+        width:30%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+    }
+    #formulario{
+        float:right;
+        width: 70%;
+    }
+}
+@media only screen and (min-width: 992px){
+    section{
+        width: 990px;
+    }
+   #imagem{
+    width: 40%;
+    height: 100%;
+   }
+   #formulario{
+    width: 60%;
+    float: right;
+   }
+   h1{
+     font-size: 2em;
+   }
+   p{
+    font-size: 1.2em;
+   }
+}
